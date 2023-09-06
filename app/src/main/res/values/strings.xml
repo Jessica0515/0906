@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">0906</string>
+    <string name="logout">Logout\n</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+</resources>
