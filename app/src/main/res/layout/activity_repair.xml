@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Repair">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f9ebda"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e0c395"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/RepairBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/previous_page"
+                android:backgroundTint="@color/black" />
+
+            <TextView
+                android:layout_width="332dp"
+                android:layout_height="90dp"
+                android:background="#f9ebda"
+                android:gravity="center"
+                android:text="報  修"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <!-- 按鈕icon不會改顏色-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:backgroundTint="#c5956f"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="報修填寫"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#c5956f"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="報修紀錄"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:cornerRadius="0dp" />
+            <!-- cornerRadius變直角-->
+            <!-- insetTop Bottom去按鈕空白-->
+            <!-- textStyle="bold" 字粗體-->
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            card_view:cardBackgroundColor="#c5956f">
+
+
+            <TextView
+                android:layout_width="226dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:text="1.設備及地點"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="50dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="A棟B1走道燈/C棟電梯"
+                    android:inputType="text"
+                    android:textSize="13sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            card_view:cardBackgroundColor="#c5956f">
+
+            <TextView
+                android:layout_width="226dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13dp"
+                android:text="2.狀況說明"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="50dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                card_view:cardBackgroundColor="#fff">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="電燈不會亮/門把掉落"
+                    android:inputType="text"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.1dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="#777" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.1dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="#777" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.1dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="#777" />
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:backgroundTint="#c5956f"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="送             出"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--layout_gravity="center"左右置中-->
+    <!-- 色號1 c5956f 色號2 e0c395-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

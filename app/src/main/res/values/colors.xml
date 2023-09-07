@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+<!--theme-->
+    <color name="themeDark1">#804233</color>
+    <color name="themeDark2">#C5956F</color>
+    <color name="themeDark3">#BD8F6B</color>
+    <color name="themeDark4">#e0c395</color>
+    <color name="themeDark5">#F9EBDA</color>
+    <color name="themeDark6">#FDEFEF</color>
+<!--sensor-->
+    <color name="warning">#EA5455</color>
+    <color name="warningWord">#FEE3EC</color>
+    <color name="safe">#CEE5D0</color>
+    <color name="safeWord">#00909E</color>
+
+
+
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="611dp"
+        android:end="0dp"
+        android:start="-20dp"
+        android:top="0dp"
+        android:bottom="-30dp"
+        android:height="412dp"
+        android:drawable="@drawable/menubot" />
+
+</layer-list>

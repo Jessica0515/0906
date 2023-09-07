@@ -30,7 +30,7 @@ public class login extends AppCompatActivity {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
-            Intent intent =new Intent(getApplicationContext(),loginSuccessful.class);
+            Intent intent =new Intent(getApplicationContext(),Menu.class);
             startActivity(intent);
             finish();
         }
@@ -72,7 +72,7 @@ public class login extends AppCompatActivity {
 
                                     Toast.makeText(getApplicationContext(),"Login Successful.",
                                             Toast.LENGTH_SHORT).show();
-                                    Intent intent =new Intent(getApplicationContext(),page2.class);
+                                    Intent intent =new Intent(getApplicationContext(),Menu.class);
                                     startActivity(intent);
                                     finish();
 
@@ -87,6 +87,5 @@ public class login extends AppCompatActivity {
                         });
             }
         });
-
     }
 }

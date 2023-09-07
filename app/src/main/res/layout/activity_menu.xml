@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/themeDark5"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/user_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="73dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="center"
+                        android:text="湘婷"
+                        android:textColor="@color/themeDark1"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="73dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="13dp"
+                        android:gravity="center"
+                        android:text="，歡迎回來!"
+                        android:textColor="@color/themeDark1"
+                        android:textSize="28dp" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="183dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    android:text="登 出"
+                    android:textColor="#D19E77"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="137dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                card_view:cardBackgroundColor="@color/themeDark3">
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/calendar"
+                    android:textColor="@color/themeDark5"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/calenMarquee"
+                    android:layout_width="279dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="17.5dp"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="this is my first app33111111111111111111111111"
+                    android:textColor="@color/themeDark5"
+                    android:textSize="23dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="67dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="17.5dp"
+                        android:background="@drawable/notification"
+                        android:textColor="@color/themeDark1"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/notiMarquee"
+                        android:layout_width="279dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="18dp"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="這是我第一個程式這是我第一個程式這是我第一個程式"
+                        android:textColor="@color/themeDark1"
+                        android:textSize="23dp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    style="@style/sensor"
+                    card_view:cardBackgroundColor="@color/warning"
+                    card_view:cardElevation="5dp"
+                    app:strokeWidth="100dp"
+                    app:strokeColor="@color/black"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-22dp"
+                        android:text="CO"
+                        android:textColor="@color/warningWord"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        style="@style/sensorNum"
+                        android:text="90"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        style="@style/sensorPa"
+                        android:textColor="#ffffff" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/sensor"
+                    card_view:cardBackgroundColor="@color/safe"
+                    card_view:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-22dp"
+                        android:text="室內溼度"
+                        android:textColor="@color/safeWord"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        style="@style/sensorNum"
+                        android:text="90"
+                        android:textColor="@color/safeWord" />
+
+                    <TextView
+                        style="@style/sensorPa"
+                        android:textColor="@color/safeWord" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/sensor"
+                    card_view:cardBackgroundColor="@color/safe"
+                    card_view:cardElevation="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-22dp"
+                        android:text="室內溫度"
+                        android:textColor="@color/safeWord"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        style="@style/sensorNum"
+                        android:text="90"
+                        android:textColor="@color/safeWord" />
+
+                    <TextView
+                        style="@style/sensorPa"
+                        android:layout_marginTop="25dp"
+                        android:text="°"
+                        android:textColor="@color/safeWord"
+                        android:textSize="27sp"
+                        android:textStyle="normal" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/sensor"
+                    android:layout_marginRight="0dp"
+                    card_view:cardBackgroundColor="@color/safe"
+                    card_view:cardElevation="5dp">
+                    <!--            card_view:cardCornerRadius="20dp"-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-22dp"
+                        android:text="空氣品質"
+                        android:textColor="@color/safeWord"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        style="@style/sensorNum"
+                        android:layout_marginRight="0dp"
+                        android:text="優"
+                        android:textColor="@color/safeWord"
+                        android:textSize="38sp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                >
+
+                <Button
+                    style="@style/functionButton"
+                    android:drawableTop="@drawable/userxml"
+                    android:text="個人資料" />
+
+                <Button
+                    android:id="@+id/menuPackage"
+                    style="@style/functionButton"
+                    android:drawableTop="@drawable/boxuser"
+                    android:text="我的包裹"
+                    />
+
+
+                <Button
+                    android:id="@+id/menuRepair"
+                    style="@style/functionButton"
+                    android:drawableTop="@drawable/tooluser"
+                    android:text="報    修" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/functionButton"
+                    android:drawableTop="@drawable/bookinguser"
+                    android:text="公設預約" />
+
+                <Button
+                    style="@style/functionButton"
+                    android:drawableTop="@drawable/facebookuser" />
+
+                <Button
+                    style="@style/functionButton"
+                    android:drawableTop="@drawable/lineuser" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="430dp"
+            android:layout_height="0dp"
+            android:layout_weight="35"
+            android:background="@drawable/menubotxml"
+            >
+
+            <Button
+                android:id="@+id/myBtn"
+                style="@style/openDoor"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="212dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_button"
+                android:drawableTop="@drawable/opendoorxml"
+                android:text="開  門"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
